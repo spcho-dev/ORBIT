@@ -1,6 +1,6 @@
 # ORBIT: Oncogenic Representation Learning via Bi-Prototype Contrastive Learning in Hyperbolic Space for Cancer Driver Gene Identification
 
-## 📖 Summary
+## Summary
 
 This repository contains the official implementation of **ORBIT**, a novel deep learning framework for Cancer Driver Gene Identification.
 
@@ -16,7 +16,7 @@ Comprehensive experiments show that ORBIT demonstrates superior performance comp
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 This model was developed and tested in the following environment, based on the provided `conda list`. We recommend using Anaconda to create a dedicated environment.
 
@@ -37,14 +37,14 @@ This model was developed and tested in the following environment, based on the p
     * `pyyaml`: `6.0.2`
 
 
-## 🚀 Implementation
+## Implementation
 
 To run the ORBIT model, you must specify the following two arguments:
 
 1.  **PPI Network Source:** `STRING`, `CPDB`, or `BioGRID`
 2.  **Cancer Type:** `pan-cancer` or a specific cancer type code (e.g., `BRCA`, `KIRC`, `LUAD`, `UCEC`)
 
-### 💡 Example Usage
+### Example Usage
 
 (Assuming the main execution script is named `run_model.py`)
 
@@ -52,9 +52,9 @@ To run the ORBIT model, you must specify the following two arguments:
 # Run ORBIT using the STRING network for pan-cancer prediction
 python run_model.py STRING pan-cancer
 
-# Run ORBIT using the CPDB network for BRCA (Breast Cancer)
+# Run ORBIT using the CPDB network for BRCA
 python run_model.py CPDB BRCA
 
-# Run ORBIT using the BioGRID network for KIRC (Kidney Renal Clear Cell Carcinoma)
+# Run ORBIT using the BioGRID network for KIRC
 python run_model.py BioGRID KIRC
 
