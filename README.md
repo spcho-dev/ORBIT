@@ -8,7 +8,7 @@ The identification of cancer driver genes is hindered by challenges in integrati
 
 **Key Features of ORBIT:**
 
-* **Synergistic Data Integration:** ORBIT synergistically integrates multi-omics profiles, protein sequence features, and functional gene sets through a data-aware attention mechanism.
+* **Synergistic Data Integration:** ORBIT synergistically integrates multi-omics profiles, protein sequence features, and functional gene sets through a **Cross attention** mechanism.
 * **Dynamic Graph Learning:** It introduces a **Context-Adaptive Graph Rewiring** mechanism to learn cancer-specific network dynamics.
 * **Hyperbolic Geometry:** It employs a novel **Bi-Prototype Contrastive Learning** designed for hyperbolic space. This approach preserves the network's natural hierarchy while structuring the gene representation space using driver and non-driver prototypes as distinct semantic anchors.
 
