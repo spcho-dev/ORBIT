@@ -44,8 +44,6 @@ To run the ORBIT model, you must specify the following two arguments:
 
 ### Example Usage
 
-(Assuming the main execution script is named `run_model.py`)
-
 ```bash
 # Run ORBIT using the STRING network for pan-cancer prediction
 python run_model.py STRING pan-cancer
