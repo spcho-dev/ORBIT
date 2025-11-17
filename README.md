@@ -56,7 +56,7 @@ pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f [https
 
 # 4. Install other core libraries
 pip install geoopt numpy pandas scikit-learn scipy networkx pyyaml
-
+```
 
 ## Implementation
 
