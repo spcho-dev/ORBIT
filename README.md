@@ -16,7 +16,7 @@ The identification of cancer driver genes is hindered by challenges in integrati
 
 ## Requirements
 
-This model was developed and tested in the following environment, based on the provided `conda list`. We recommend using Anaconda to create a dedicated environment.
+This model was developed and tested in the following environment. We recommend using Anaconda to create a dedicated environment.
 
 * **Python:** `3.8.20`
 * **PyTorch:** `2.4.1+cu121`
@@ -33,6 +33,25 @@ This model was developed and tested in the following environment, based on the p
     * `scipy`: `1.10.1`
     * `networkx`: `3.0`
     * `pyyaml`: `6.0.2`
+
+### Conda Environ,ent Setup Example
+# 1. Create a new conda environment named 'orbit_env'
+conda create -n orbit_env python=3.8
+conda activate orbit_env
+
+# 2. Install PyTorch 2.4.1 (for CUDA 12.1)
+# (Please check the official PyTorch website for commands matching your specific system)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+# 3. Install PyTorch Geometric (PyG)
+# (This command automatically matches the installed PyTorch and CUDA versions)
+pip install torch-geometric
+
+# Install PyG dependencies matching PyTorch 2.4.x
+pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
+
+# 4. Install other core libraries
+pip install geoopt numpy pandas scikit-learn scipy networkx pyyaml
 
 
 ## Implementation
