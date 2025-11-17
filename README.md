@@ -45,14 +45,14 @@ conda activate orbit_env
 
 # 2. Install PyTorch 2.4.1 (for CUDA 12.1)
 # (Please check the official PyTorch website for commands matching your specific system)
-pip install torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 # 3. Install PyTorch Geometric (PyG)
 # (This command automatically matches the installed PyTorch and CUDA versions)
 pip install torch-geometric
 
 # Install PyG dependencies matching PyTorch 2.4.x
-pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f [https://data.pyg.org/whl/torch-2.4.0+cu121.html](https://data.pyg.org/whl/torch-2.4.0+cu121.html)
+pip install torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-2.4.0+cu121.html
 
 # 4. Install other core libraries
 pip install geoopt numpy pandas scikit-learn scipy networkx pyyaml
